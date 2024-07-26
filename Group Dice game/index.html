@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>3-Player Dice Race Game</title>
+    <link rel="stylesheet" href="styles.css">
+
+</head>
+<body>
+    <div class="game-container">
+        <h1>3-Player Dice Race Game</h1>
+        <div class="board">
+            <div class="path"></div>
+            <div id="player1" class="player yellow"></div>
+            <div id="player2" class="player red"></div>
+            <div id="player3" class="player green"></div>
+            <div class="winning-house"></div>
+        </div>
+        <div class="dice-container">
+            <div class="dice">
+                <div class="face front">1</div>
+                <div class="face back">9</div>
+                <div class="face top">2</div>
+                <div class="face bottom">5</div>
+                <div class="face right">3</div>
+                <div class="face left">4</div>
+            </div>
+        </div>
+        <button id="rollButton">Roll Dice</button>
+        <div id="gameStatus"></div>
+    </div>
+    <div class="player-scores">
+        <div class="score-box" id="score1">
+            <h3>Player 1</h3>
+            <p>Score: <span>0</span></p>
+        </div>
+        <div class="score-box" id="score2">
+            <h3>Player 2</h3>
+            <p>Score: <span>0</span></p>
+        </div>
+        <div class="score-box" id="score3">
+            <h3>Player 3</h3>
+            <p>Score: <span>0</span></p>
+        </div>
+    <script src="script.js"></script>
+</body>
+</html>
